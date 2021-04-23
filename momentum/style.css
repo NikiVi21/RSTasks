@@ -1,0 +1,195 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: background-image 1s ease-in-out;
+}
+
+h1 {
+  margin-bottom: 2.5rem;
+}
+
+h2 {
+  margin-bottom: 0.5rem;
+  opacity: 0.7;
+}
+
+#time {
+  font-size: 8rem;
+}
+
+.container_time {
+  text-shadow: 0 1px 1px #000, -1px 0 1px #000, 0 -1px 1px #000;
+}
+
+.container_name-focus {
+  text-shadow: 0 1px 1px #000, -1px 0 1px #000, 0 -1px 1px #000;
+}
+
+#name,
+#focus,
+.city {
+  display: inline-block;
+}
+/* ***** BUTTON ***** */
+
+.btn {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  width: 50px;
+  height: 50px;
+  border: 0;
+  background: url("/nikivi21-JS2020Q3/momentum/assets/images/Update-Button-PNG-Image.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  filter: grayscale(0.8);
+  margin: 10px;
+}
+
+.btn:hover {
+  cursor: pointer;
+  filter: grayscale(0.2);
+  animation: turn360 0.5s;
+}
+
+.btn:active,
+.btn:focus {
+  outline: 0;
+}
+
+.btn:active {
+  transform: scale(1.2);
+}
+
+/* ***** Blockquote ***** */
+.quote {
+  font: 1.2rem Georgia, serif;
+  margin: 0;
+  background-color: rgba(238, 238, 238, 0.5);
+  border-radius: 1em;
+  /* display: flex; */
+}
+.quote figcaption,
+.quote blockquote {
+  margin: 1em;
+}
+.quote figcaption {
+  text-align: right;
+}
+.btn_blockquote {
+  width: 50px;
+  height: 50px;
+  border: 0;
+  border-radius: 50%;
+  background-image: url("/nikivi21-JS2020Q3/momentum/assets/images/Update-Button-PNG-Image.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  filter: grayscale(0.8);
+  margin: 5px;
+}
+.btn_blockquote:hover {
+  cursor: pointer;
+  filter: grayscale(0.2);
+  animation: turn360 0.5s;
+}
+.btn_blockquote:active,
+.btn_blockquote:focus {
+  outline: 0;
+}
+.btn_blockquote:active {
+  transform: scale(1.2);
+}
+
+/* ***** WEATHER ***** */
+
+.weather {
+  font-size: 16px;
+  width: 10rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background-color: rgba(238, 238, 238, 0.5);
+  border-radius: 1rem;
+  padding: 0.5em;
+  margin-bottom: 1rem;
+}
+
+.weather-icon {
+  transform: scale(2.2);
+}
+
+.weather-icon:hover {
+  transform: scale(2.2);
+  animation: shake 1.5s;
+}
+
+@keyframes turn360 {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes shake {
+  0% {
+    transform: translate(1px, 1px) rotate(0deg);
+  }
+  10% {
+    transform: translate(-1px, -2px) rotate(-1deg);
+  }
+  30% {
+    transform: translate(3px, 2px) rotate(0deg);
+  }
+  50% {
+    transform: translate(-1px, 2px) rotate(-1deg);
+  }
+  70% {
+    transform: translate(3px, 1px) rotate(-1deg);
+  }
+  90% {
+    transform: translate(1px, 2px) rotate(0deg);
+  }
+}
+
+@media (max-width: 768px) {
+  #time {
+    font-size: 6rem;
+  }
+}
+
+@media (max-width: 420px) {
+  #time {
+    font-size: 3rem;
+    margin-left: 3.55rem;
+    margin-right: 3.55rem;
+  }
+  h1 {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+  }
+}
+
+@media (max-width: 540px) {
+  #time {
+    font-size: 3rem;
+    margin-left: 3.55rem;
+    margin-right: 3.55rem;
+  }
+}
