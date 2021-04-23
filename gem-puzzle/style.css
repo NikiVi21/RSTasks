@@ -1,0 +1,108 @@
+body {
+  font-family: "Minecraft Rus";
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: url(./assets/thumb-1920-377759.png);
+}
+
+.field {
+  width: 400px;
+  height: 400px;
+  border: 2px solid black;
+  position: relative;
+}
+
+.cell {
+  box-sizing: border-box;
+  color: aliceblue;
+  width: 100px;
+  height: 100px;
+  border: 1px solid black;
+  position: absolute;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.3s;
+  background: url(./assets/c802ecb5264c1c0dc74da1e3ea2a4c6e3acb863cr5-1000-1000_00.jpg);
+  background-size: 100px;
+}
+
+.info {
+  display: flex;
+  width: 400px;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  padding: 10px 0 10px 0;
+  border: 3px solid black;
+}
+
+.size-field {
+  display: flex;
+}
+
+button {
+  height: 40px;
+  width: 100px;
+  outline: 2px solid black;
+  position: relative;
+  margin: 0;
+  display: inline-block;
+  background-image: url("./assets/button_center.png");
+  background-repeat: repeat;
+  padding: 0;
+  font-family: "Minecraft Rus";
+  text-align: center;
+  color: white;
+  text-shadow: 3px 3px #4c4c4c;
+  border-bottom: 4px solid #565656;
+  border-right: 2px solid #565656;
+  border-left: 2px solid #aaa;
+  border-top: 2px solid #aaa;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+
+button:hover {
+  cursor: pointer;
+  border-bottom: 4px solid #59639a;
+  border-right: 2px solid #59639a;
+  border-left: 2px solid #bdc6ff;
+  border-top: 2px solid #bdc6ff;
+  background-image: url("./assets/button_active_center.png");
+  color: #ffffa0;
+}
+
+.finish-window {
+  z-index: 2;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  position: fixed;
+  top: 0px;
+}
+
+.finish-window-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  margin: 50px auto 0px auto;
+  width: 600px;
+  height: 200px;
+  padding: 10px;
+  background-color: #c5c5c5;
+  box-shadow: 0px 0px 10px #000;
+}
