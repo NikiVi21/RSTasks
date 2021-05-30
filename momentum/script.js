@@ -212,11 +212,11 @@ city.addEventListener("blur", setCity);
 city.addEventListener("click", setCity);
 
 //=========================================================
-const baseNight = "/nikivi21-JS2020Q3/momentum/assets/images/night/";
-const baseMorning = "/nikivi21-JS2020Q3/momentum/assets/images/morning/";
-const baseDay = "/nikivi21-JS2020Q3/momentum/assets/images/day/";
-const baseEvening = "/nikivi21-JS2020Q3/momentum/assets/images/evening/";
-const baseAll = "/nikivi21-JS2020Q3/momentum/assets/images/";
+const baseNight = "./assets/images/night/";
+const baseMorning = "./assets/images/morning/";
+const baseDay = "./assets/images/day/";
+const baseEvening = "./assets/images/evening/";
+const baseAll = "./assets/images/";
 const images = [
   "01.jpg",
   "02.jpg",

@@ -54,7 +54,7 @@ h2 {
   width: 50px;
   height: 50px;
   border: 0;
-  background: url("/nikivi21-JS2020Q3/momentum/assets/images/Update-Button-PNG-Image.png");
+  background: url("./assets/images/Update-Button-PNG-Image.png");
   background-size: contain;
   background-repeat: no-repeat;
   filter: grayscale(0.8);
@@ -96,7 +96,7 @@ h2 {
   height: 50px;
   border: 0;
   border-radius: 50%;
-  background-image: url("/nikivi21-JS2020Q3/momentum/assets/images/Update-Button-PNG-Image.png");
+  background-image: url("./assets/images/Update-Button-PNG-Image.png");
   background-size: contain;
   background-repeat: no-repeat;
   filter: grayscale(0.8);
